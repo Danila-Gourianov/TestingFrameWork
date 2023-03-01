@@ -28,7 +28,7 @@ namespace ATLabProject.Tests.Appium_test
             capabilities.AddAdditionalCapability("appPackage", "com.android.dialer");
             capabilities.AddAdditionalCapability("appActivity", "DialtactsActivity");
             driver = new AndroidDriver<AndroidElement>(capabilities);
-            driver.Navigate().GoToUrl("http://127.0.01:4723/wd/hub");
+            driver.Navigate().GoToUrl("http://127.0.0.1:4723/wd/hub");
         }
 
         [Test]
